@@ -9,12 +9,12 @@ public class CameraController : MonoBehaviour
    
 	private void FixedUpdate()
 	{
-        HandleCameraMovement();
-    }
+           HandleCameraMovement();
+    	}
 
 	private void HandleCameraMovement()
 	{
-        transform.position = new Vector3(player.transform.position.x + offset.x,
-            player.transform.position.y + offset.y, player.transform.position.z + offset.z);
+	   transform.position = new Vector3(player.transform.position.x + offset.x,
+	      player.transform.position.y + offset.y, player.transform.position.z + offset.z);
 	}
 }
